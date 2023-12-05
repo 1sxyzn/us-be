@@ -103,3 +103,8 @@ Nest is [MIT licensed](LICENSE).
 - 접근자 데커레이터
 - 속성 데커레이터
 - 매개변수 데커레이터
+
+### Provider
+- 비즈니스 로직 수행 (단일 책임 원칙)
+- service, repository, factory, helper 등 여러 형태로 구현 가능
+- 의존성 주입 가능
