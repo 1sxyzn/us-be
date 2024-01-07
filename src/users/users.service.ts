@@ -33,4 +33,10 @@ export class UsersService {
       signupVerifyToken,
     );
   }
+
+  async verifyEmail(signupVerifyToken: string): Promise<string> {
+    // DB 연동 후 signupVerifyToken 으로 회원 가입 처리 중인 유저 여부 조회한 다음, 없으면 에러
+    // 있다면 로그인 상태로 바꾸기 위해 jwt 발급
+    throw new Error('Method 404');
+  }
 }
