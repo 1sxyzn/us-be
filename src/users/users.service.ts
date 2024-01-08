@@ -1,6 +1,7 @@
 import * as uuid from 'uuid';
 import { Injectable } from '@nestjs/common';
 import { EmailService } from '../email/email.service';
+import { UserInfo } from './UserInfo';
 
 @Injectable()
 export class UsersService {
@@ -37,6 +38,18 @@ export class UsersService {
   async verifyEmail(signupVerifyToken: string): Promise<string> {
     // DB 연동 후 signupVerifyToken 으로 회원 가입 처리 중인 유저 여부 조회한 다음, 없으면 에러
     // 있다면 로그인 상태로 바꾸기 위해 jwt 발급
+    throw new Error('Method 404');
+  }
+
+  async login(email: string, password: string): Promise<string> {
+    // DB 연동 후 email, password 를 가진 유저 조회, 없으면 에러
+    // 있다면 jwt 발급
+    throw new Error('Method 404');
+  }
+
+  async getUserInfo(userId: string): Promise<UserInfo> {
+    // DB 연동 후 userId 를 가진 유저 조회, 없으면 에러
+    // 있다면 데이터를 UserInfo 타입으로 반환
     throw new Error('Method 404');
   }
 }
